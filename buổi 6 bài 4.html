@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cá Nhân</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ======= MENU ======= */
+        .top-nav {
+            background-color: #222;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 15px 20px;
+        }
+        .top-nav .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .menu a:hover {
+            background-color: #555;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        header {
+            text-align: center;
+            padding: 120px 20px 40px;
+            background-color: #333;
+            color: white;
+            font-size: 28px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 100px auto 20px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+        }
+
+        .content, .sidebar {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            display: block;
+            margin: 10px auto;
+            width: 150px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+            transition: 0.3s;
+        }
+        .sidebar ul li a:hover {
+            color: #555;
+        }
+
+        .hobbies {
+            display: flex;
+            gap: 10px;
+        }
+        .hobby {
+            background: #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .hobby i {
+            font-size: 24px;
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #222;
+            color: white;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .menu {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="logo"><i class="fas fa-user-circle"></i> Portfolio</div>
+        <div class="menu">
+            <a href="#"><i class="fas fa-home"></i> Trang chủ</a>
+            <a href="#"><i class="fas fa-user"></i> Giới thiệu</a>
+            <a href="#"><i class="fas fa-tasks"></i> Bài tập</a>
+            
+        </div>
+    </nav>
+
+    <header>
+        <h1>Portfolio Cá Nhân - Đặng Ánh Tuyết</h1>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Liên kết bài tập</h2> 
+            <ul>
+                <li><a href="https://anhtuyet1306.github.io/bai-tap-/">Bài tập 1</a></li>
+                <li><a href="https://anhtuyet1306.github.io/B-i-T-p/">Bài tập 2</a></li>
+                <li><a href="https://anhtuyet1306.github.io/bu-i-3/">Bài tập 3</a></li>
+                <li><a href="https://anhtuyet1306.github.io/bu-i-4/">Bài tập 4</a></li>
+                <li><a href="https://anhtuyet1306.github.io/Buoi-5/">Bài tập 5</a></li>
+            </ul>
+        </aside>
+
+        <section class="content">
+            <h2><i class="fas fa-smile"></i> Chào mừng đến với trang cá nhân của tôi!</h2>
+            <img class="profile-img" src="https://cdn11.dienmaycholon.vn/filewebdmclnew/public/userupload/files/Image%20FP_2024/avatar-cute-3.jpg" alt="Ảnh cá nhân">
+            <p><strong>Họ tên:</strong> Đặng Ánh Tuyết</p>
+            <p><strong>Ngành học:</strong> Công nghệ thông tin</p>
+            
+            <h3><i class="fas fa-heart"></i> Sở thích & Năng khiếu</h3>
+            <div class="hobbies">
+                <div class="hobby"><i class="fas fa-music"></i><p>Nghe nhạc</p></div>
+                <div class="hobby"><i class="fas fa-camera"></i><p>Chụp ảnh</p></div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 - Toét chinh gái</p>
+    </footer>
+</body>
+</html>
